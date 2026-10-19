@@ -1,0 +1,43 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: shopassist-backend
+
+  datasource:
+    url: jdbc:postgresql://localhost:5434/shopassist
+    username: shopassist
+    password: shopassist
+    hikari:
+      pool-name: ShopAssistPool
+
+  flyway:
+    enabled: true
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+
+app:
+  jwt:
+    secret: ${APP_JWT_SECRET:change-me-change-me-change-me-change-me-change-me-123456789}
+    expiration-hours: 12
+  ollama:
+    base-url: ${APP_OLLAMA_BASE_URL:http://localhost:11434}
+    chat-model: ${APP_OLLAMA_CHAT_MODEL:llama3.1:8b}
+    embedding-model: ${APP_OLLAMA_EMBEDDING_MODEL:nomic-embed-text}
+  retrieval:
+    top-k-vector: 5
+    top-k-keyword: 5
+    merged-limit: 6
+  chunking:
+    chunk-size: 650
+    overlap: 80

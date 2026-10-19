@@ -1,0 +1,30 @@
+[
+  {
+    "id": "returns-policy",
+    "title": "Returns Policy",
+    "sourceType": "bootstrap",
+    "sourceUri": "classpath:bootstrap-docs/policies.json",
+    "content": "Electronics can be returned within 14 days if unused and with original packaging. Refunds are issued within 5 to 7 business days after inspection."
+  },
+  {
+    "id": "shipping-policy",
+    "title": "Shipping Policy",
+    "sourceType": "bootstrap",
+    "sourceUri": "classpath:bootstrap-docs/policies.json",
+    "content": "Standard shipping takes 3 to 5 business days. Orders above $50 qualify for free standard shipping."
+  },
+  {
+    "id": "warranty-policy",
+    "title": "Warranty Policy",
+    "sourceType": "bootstrap",
+    "sourceUri": "classpath:bootstrap-docs/policies.json",
+    "content": "Most electronics include a 12 month limited warranty covering manufacturing defects only."
+  },
+  {
+    "id": "account-support-policy",
+    "title": "Account Support Policy",
+    "sourceType": "bootstrap",
+    "sourceUri": "classpath:bootstrap-docs/policies.json",
+    "content": "Customers can reset passwords through the account page. Refund decisions beyond standard policy require admin review."
+  }
+]
