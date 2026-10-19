@@ -3,7 +3,7 @@
 An AI customer-support assistant that answers shop-policy questions from a company's own documents (retrieval-augmented generation). It runs **fully locally** with [Ollama](https://ollama.com), so there is no external AI API and no data leaves your machine.
 
 Built with **Spring Boot 3, PostgreSQL + pgvector, Ollama and Angular**.
-
+ 
 
 ## Features
 
